@@ -15,10 +15,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install dependencies
-        uses: npm install
+        run: npm install
 
       - name: Check linting
-        uses: npm run lint
+        run: npm run lint
 
       - name: Run tests
-        uses: npm test
+        run: npm test
